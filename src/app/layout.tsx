@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { headers } from "next/headers";
 import ContextProvider from "@/components/context/wagmiProvider";
-
+export const dynamic = 'force-dynamic';
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
