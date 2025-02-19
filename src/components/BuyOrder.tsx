@@ -1,3 +1,4 @@
+'use client'
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import {
@@ -118,8 +119,6 @@ export function BuyOrder() {
   };
 
   return (
-    <WagmiProvider config={config}>
-      <QueryClientProvider client={queryClient}>
         <Card>
           <CardHeader>
             <CardTitle>Place Buy Order</CardTitle>
@@ -186,7 +185,5 @@ export function BuyOrder() {
             )}
           </CardFooter>
         </Card>
-      </QueryClientProvider>
-    </WagmiProvider>
   );
 }

@@ -1,3 +1,4 @@
+'use client'
 import { useAccount, useDisconnect, useEnsAvatar, useEnsName } from "wagmi";
 import {
   Popover,
