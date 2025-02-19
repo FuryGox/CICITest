@@ -1,10 +1,6 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { MarketOverview } from "@/components/MarketOverview";
-import { WalletOptions } from "@/components/wallet-option";
-import EquityChart from "@/components/EquityChart"; // Import the EquityChart component
+import  WalletStatic  from "@/components/wallet-option";
 import BuyOrderPage from "@/components/BuyOrder";
-import { SellOrder } from "@/components/SellOrder";
-import { OrderList } from "@/components/OrderList";
 
 
 export default function NFTDApp() {
@@ -13,7 +9,7 @@ export default function NFTDApp() {
         <div className="container mx-auto p-4">
           <header className="flex justify-between items-center mb-6">
             <h1 className="text-2xl font-bold">NFT DApp</h1>
-            <WalletOptions />
+            <WalletStatic />
           </header>
           <Tabs defaultValue="buy" className="mb-2">
             <TabsList>
