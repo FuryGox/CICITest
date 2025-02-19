@@ -2,7 +2,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { MarketOverview } from "@/components/MarketOverview";
 import { WalletOptions } from "@/components/wallet-option";
 import EquityChart from "@/components/EquityChart"; // Import the EquityChart component
-import { BuyOrder } from "@/components/BuyOrder";
+import BuyOrderPage from "@/components/BuyOrder";
 import { SellOrder } from "@/components/SellOrder";
 import { OrderList } from "@/components/OrderList";
 
@@ -22,17 +22,17 @@ export default function NFTDApp() {
               <TabsTrigger value="orders">Orders</TabsTrigger>
             </TabsList>
             <TabsContent value="buy">
-              <BuyOrder /> 
+              <BuyOrderPage nftPrice={0} /> 
             </TabsContent>
             <TabsContent value="sell">
-              <SellOrder />
+              {/* <SellOrder /> */}
             </TabsContent>
             <TabsContent value="orders">
-              <OrderList />
+              {/* <OrderList /> */}
             </TabsContent>
           </Tabs>
-          <MarketOverview/>
-          <EquityChart />
+          {/* <MarketOverview/> */}
+          {/* <EquityChart /> */}
         </div>
   );
 }
